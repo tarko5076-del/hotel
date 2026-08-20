@@ -131,6 +131,19 @@ textarea.booking-input {
 .locale-am .booking-field input, .locale-am .booking-field textarea, .locale-am .booking-counter output, .locale-am .booking-room .font-display { font-family: var(--font-ethiopic), Arial, sans-serif; line-height: 1.45; letter-spacing: 0; }
 .locale-am .booking-field > label, .locale-am .booking-progress, .locale-am .booking-progress-desktop, .locale-am .booking-counter .tracking-\[0\.18em\] { letter-spacing: .04em; }
 
+/* Images have a visible base state. The keyframe only adds a scale settle;
+   it must never be responsible for making page content appear. */
+.reveal-image-media {
+  opacity: 1;
+  transform: scale(1);
+  animation: reveal-image-settle 1.05s cubic-bezier(.22, 1, .36, 1) var(--reveal-image-delay, 0s) both;
+}
+
+@keyframes reveal-image-settle {
+  from { transform: scale(1.045); }
+  to { transform: scale(1); }
+}
+
 @media (min-width: 640px) {
   .booking-input {
     min-height: 3.25rem;
@@ -146,5 +159,11 @@ textarea.booking-input {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .reveal-image-media {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 }

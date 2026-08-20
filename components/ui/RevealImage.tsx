@@ -3,8 +3,7 @@
 import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-
-const ease = [0.22, 1, 0.36, 1] as const;
+import type { CSSProperties } from "react";
 
 type RevealImageProps = {
   src: string;
@@ -59,14 +58,6 @@ export function RevealImage({
 
   const shouldAnimate = animation !== "none" && !reduceMotion;
 
-  const innerInitial = shouldAnimate && (isParallax || animation === "scale" || animation === "reveal")
-    ? { scale: 1.045 }
-    : false;
-
-  const innerAnimate = shouldAnimate && (isParallax || animation === "scale" || animation === "reveal")
-    ? { scale: 1 }
-    : {};
-
   return (
     <motion.div
       ref={ref}
@@ -75,28 +66,32 @@ export function RevealImage({
       <motion.div
         className="absolute inset-x-0 -top-[5%] h-[110%]"
         style={isParallax && desktopMotion && !reduceMotion ? { y } : undefined}
-        initial={innerInitial}
-        // The image is always fully visible. This animation is deliberately
-        // independent of IntersectionObserver, hydration timing, and input.
-        animate={innerAnimate}
-        transition={{ duration: reduceMotion ? 0 : 1.05, delay: reduceMotion ? 0 : delay, ease }}
       >
-        {failed ? (
-          <div role="img" aria-label={alt} className="h-full w-full bg-[#c9c3b7]" />
-        ) : (
-          <Image
-            src={src}
-            alt={alt}
-            fill
-            priority={priority}
-            loading={priority ? undefined : "lazy"}
-            quality={quality}
-            sizes={sizes}
-            className={`object-cover ${imageClassName}`}
-            style={objectPosition ? {objectPosition} : undefined}
-            onError={() => setFailed(true)}
-          />
-        )}
+        <div
+          className={`h-full w-full ${shouldAnimate ? "reveal-image-media" : ""}`}
+          // Keep the actual media in regular, visible DOM. Its scale animation
+          // is a CSS-only enhancement, never an animation-state visibility gate.
+          // A missing stylesheet, delayed hydration, or failed observer therefore
+          // leaves the image at its visible base state.
+          style={shouldAnimate ? { "--reveal-image-delay": `${delay}s` } as CSSProperties : undefined}
+        >
+          {failed ? (
+            <div role="img" aria-label={alt} className="h-full w-full bg-[#c9c3b7]" />
+          ) : (
+            <Image
+              src={src}
+              alt={alt}
+              fill
+              priority={priority}
+              loading={priority ? undefined : "lazy"}
+              quality={quality}
+              sizes={sizes}
+              className={`object-cover ${imageClassName}`}
+              style={objectPosition ? {objectPosition} : undefined}
+              onError={() => setFailed(true)}
+            />
+          )}
+        </div>
       </motion.div>
       {overlayClassName && <div className={`absolute inset-0 ${overlayClassName}`} />}
     </motion.div>
