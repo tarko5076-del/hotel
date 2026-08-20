@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --page: #f7f5f0;
+  --ink: #1e1e1a;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; background: var(--page); }
+
+section[id] { scroll-margin-top: 6.5rem; }
+
+body {
+  margin: 0;
+  min-width: 0;
+  color: var(--ink);
+  background: var(--page);
+  font-family: var(--font-manrope), Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.locale-am {
+  font-family: var(--font-ethiopic), Arial, sans-serif;
+  line-height: 1.65;
+}
+
+.locale-am .font-display,
+.locale-am .booking-input {
+  font-family: var(--font-ethiopic), Arial, sans-serif;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.locale-am .tracking-\[0\.18em\],
+.locale-am .tracking-\[0\.2em\],
+.locale-am .tracking-\[0\.22em\],
+.locale-am .tracking-\[0\.24em\] {
+  letter-spacing: 0.04em;
+}
+
+main,
+section,
+article,
+fieldset {
+  min-width: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection { color: #fff; background: #596052; }
+
+.focus-ring:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+}
+
+.booking-input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 3rem;
+  margin-top: 0.65rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  outline: none;
+}
+
+.booking-input:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
+.booking-input::-webkit-calendar-picker-indicator { cursor: pointer; opacity: 0.65; }
+
+textarea.booking-input {
+  min-height: 8rem;
+  padding-block: 0.5rem;
+}
+
+.booking-progress { display: flex; align-items: baseline; gap: .38rem; border-bottom: 1px solid rgb(30 30 26 / .15); padding-bottom: .9rem; }
+.booking-progress-desktop { display: none; }
+.booking-field { min-width: 0; border-bottom: 1px solid rgb(30 30 26 / .15); padding: 1.25rem 0; }
+.booking-field > label { display: block; color: #596052; font-size: 10px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.booking-field input, .booking-field textarea { display: block; width: 100%; min-width: 0; border: 0; border-radius: 0; border-bottom: 1px solid rgb(30 30 26 / .35); background: transparent; color: var(--ink); font-family: var(--font-cormorant), Georgia, serif; font-size: 1.5rem; line-height: 1.2; outline: 0; padding: .7rem 0 .5rem; }
+.booking-field textarea { min-height: 8rem; resize: vertical; font-size: 1.25rem; line-height: 1.5; }
+.booking-field input:focus-visible, .booking-field textarea:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+.booking-field p { margin: .5rem 0 0; color: #8a3f34; font-size: .75rem; line-height: 1.25rem; }
+.booking-date { display: flex; align-items: center; gap: .7rem; border-bottom: 1px solid rgb(30 30 26 / .35); }
+.booking-date input { border: 0; }
+.booking-date svg { flex: none; color: #596052; }
+.booking-counter { display: flex; min-height: 6.25rem; align-items: center; justify-content: space-between; border-bottom: 1px solid rgb(30 30 26 / .15); }
+.booking-counter button { display: inline-flex; width: 2.75rem; height: 2.75rem; align-items: center; justify-content: center; border: 1px solid rgb(30 30 26 / .3); border-radius: 999px; background: transparent; color: var(--ink); transition: background-color .25s ease, color .25s ease, border-color .25s ease; }
+.booking-counter button:hover:not(:disabled), .booking-counter button:active:not(:disabled) { border-color: var(--ink); background: var(--ink); color: var(--page); }
+.booking-counter button:disabled { cursor: not-allowed; opacity: .3; }
+.booking-room { display: grid; grid-template-columns: 7rem minmax(0, 1fr); gap: .9rem; cursor: pointer; border: 1px solid rgb(30 30 26 / .16); background: transparent; transition: border-color .3s ease, background-color .3s ease, transform .3s ease; }
+.booking-room:hover { border-color: rgb(30 30 26 / .5); }
+.booking-room.is-selected { border-color: #b99a5c; background: rgb(185 154 92 / .07); transform: scale(1.01); }
+.booking-room:has(input:focus-visible) { outline: 2px solid var(--ink); outline-offset: 4px; }
+.booking-room input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.booking-room img { width: 100%; height: 100%; min-height: 11.25rem; object-fit: cover; }
+.booking-cta { justify-content: center; transition: background-color .25s ease, transform .2s ease; }
+.booking-cta:active { transform: scale(.98); }
+
+@media (min-width: 640px) {
+  .booking-progress { display: none; }
+  .booking-progress-desktop { display: flex; align-items: center; gap: .7rem; margin: 0; padding: 0; list-style: none; color: rgb(30 30 26 / .42); font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+  .booking-progress-desktop li { display: flex; align-items: center; gap: .7rem; white-space: nowrap; }
+  .booking-progress-desktop li:not(:last-child)::after { width: clamp(1rem, 3vw, 2.4rem); height: 1px; background: currentColor; content: ""; }
+  .booking-progress-desktop li.is-active { color: var(--ink); }
+  .booking-field { padding: 1.5rem 0; }
+  .booking-field:nth-child(odd) { padding-right: 1.5rem; }
+  .booking-field:nth-child(even) { padding-left: 1.5rem; }
+  .booking-field input { font-size: 1.65rem; }
+  .booking-room { grid-template-columns: 10rem minmax(0, 1fr); }
+}
+
+.locale-am .booking-field input, .locale-am .booking-field textarea, .locale-am .booking-counter output, .locale-am .booking-room .font-display { font-family: var(--font-ethiopic), Arial, sans-serif; line-height: 1.45; letter-spacing: 0; }
+.locale-am .booking-field > label, .locale-am .booking-progress, .locale-am .booking-progress-desktop, .locale-am .booking-counter .tracking-\[0\.18em\] { letter-spacing: .04em; }
+
+@media (min-width: 640px) {
+  .booking-input {
+    min-height: 3.25rem;
+    margin-top: 0.85rem;
+    font-size: 1.65rem;
+    line-height: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

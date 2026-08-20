@@ -1,0 +1,255 @@
+{
+  "nav": {
+    "rooms": "Rooms",
+    "experience": "Experience",
+    "dining": "Dining",
+    "gallery": "Gallery",
+    "location": "Location",
+    "book": "Book now",
+    "open": "Open navigation menu",
+    "close": "Close navigation menu",
+    "mobile": "Mobile navigation"
+  },
+  "hero": {
+    "location": "Wereta · Ethiopia",
+    "title": "Experience\nParadise",
+    "description": "A refined stay where modern hospitality, peaceful surroundings, and unforgettable Ethiopian experiences come together.",
+    "book": "Book your stay",
+    "explore": "Explore Paradis",
+    "scroll": "Scroll",
+    "alt": "Elegant poolside view at a luxury hotel"
+  },
+  "intro": {
+    "eyebrow": "Welcome to Paradis",
+    "title": "A place to\nslow down.",
+    "description": "Discover a refined stay in Wereta, Ethiopia, where contemporary comfort meets warm hospitality and the beauty of the surrounding destination.",
+    "cta": "Discover Paradis",
+    "alt": "Sunlit lounge at a contemporary hotel"
+  },
+  "rooms": {
+    "eyebrow": "Stay your way",
+    "title": "Rooms &\nSuites",
+    "description": "Thoughtfully designed spaces created for restful nights, slow mornings, and memorable stays.",
+    "all": "View all rooms",
+    "explore": "Explore room",
+    "items": [
+      {
+        "category": "Guest room",
+        "name": "Deluxe Room",
+        "description": "A refined space designed for comfort, relaxation, and effortless stays.",
+        "alt": "A softly lit contemporary hotel bedroom with a made bed"
+      },
+      {
+        "category": "Guest room",
+        "name": "Executive Room",
+        "description": "Contemporary comfort with an elevated atmosphere for travelers who appreciate a little more.",
+        "alt": "A calm hotel bedroom with natural light and warm materials"
+      },
+      {
+        "category": "Suite",
+        "name": "Junior Suite",
+        "description": "A spacious retreat designed for longer stays and special moments.",
+        "alt": "An elegant hotel suite with layered textures and a seating area"
+      }
+    ]
+  },
+  "experience": {
+    "eyebrow": "The Paradis experience",
+    "title": "More than\na stay.",
+    "description": "Slow mornings, memorable evenings, thoughtful service, and moments designed to make every stay feel extraordinary.",
+    "explore": "Explore",
+    "items": [
+      {
+        "category": "Wellness",
+        "title": "Restore your rhythm.",
+        "description": "A peaceful experience focused on relaxation, wellness, and taking time for yourself.",
+        "alt": "A calm treatment room with warm natural light"
+      },
+      {
+        "category": "Leisure",
+        "title": "Make time for what matters.",
+        "description": "Relax, unwind, and enjoy moments designed around comfort and connection.",
+        "alt": "A quiet sunlit hotel lounge"
+      },
+      {
+        "category": "Discovery",
+        "title": "Discover Ethiopia differently.",
+        "description": "Set out at your own pace and connect with the landscapes, culture, and character of the destination.",
+        "alt": "A peaceful Ethiopian landscape beneath a wide sky"
+      },
+      {
+        "category": "Moments",
+        "title": "Made for two.",
+        "description": "Romantic stays, private moments, and unhurried time together for occasions worth remembering.",
+        "alt": "An intimate candlelit table setting"
+      }
+    ]
+  },
+  "dining": {
+    "eyebrow": "Taste Paradis",
+    "title": "Dining with\ncharacter.",
+    "description": "Thoughtful flavors, warm hospitality, and memorable moments around the table.",
+    "featureAlt": "A warmly lit restaurant interior with elegant table settings",
+    "explore": "Explore",
+    "items": [
+      {
+        "title": "Restaurant",
+        "description": "Contemporary dining in an elegant setting, shaped by warm hospitality and memorable meals.",
+        "alt": "An elegantly set restaurant table in natural light"
+      },
+      {
+        "title": "Bar & Lounge",
+        "description": "Slow evenings, thoughtful drinks, and good conversation in a setting made for lingering.",
+        "alt": "A softly lit contemporary lounge interior"
+      },
+      {
+        "title": "Breakfast",
+        "description": "Begin the day beautifully with a relaxed and welcoming start around the table.",
+        "alt": "A bright breakfast table with fresh food"
+      }
+    ]
+  },
+  "romance": {
+    "eyebrow": "For two",
+    "title": "Make the\nmoment last.",
+    "description": "From quiet mornings to unforgettable evenings, Paradis creates space for moments worth remembering.",
+    "cta": "Explore Paradis",
+    "alt": "A quiet coastal scene in warm evening light"
+  },
+  "destination": {
+    "eyebrow": "The destination",
+    "title": "Discover\nWereta.",
+    "description": "A stay at Paradis is an invitation to slow down, explore, and experience the character of northern Ethiopia.",
+    "alt": "An expansive Ethiopian landscape with green hills",
+    "items": [
+      {
+        "label": "Arrive",
+        "description": "A peaceful base for discovering the region."
+      },
+      {
+        "label": "Explore",
+        "description": "Experience the landscapes, culture, and character of Ethiopia."
+      },
+      {
+        "label": "Return",
+        "description": "Come back to a place designed for rest and comfort."
+      }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "A glimpse of Paradis",
+    "title": "See the stay.",
+    "description": "Explore the spaces, details, and moments that define the Paradis experience.",
+    "view": "View",
+    "open": "Open {title}, {category}",
+    "close": "Close gallery",
+    "previous": "Previous image",
+    "next": "Next image",
+    "dialog": "Gallery image: {title}",
+    "items": [
+      {"category": "Hotel", "title": "The quiet arrival", "alt": "A bright contemporary hotel interior with sculptural details"},
+      {"category": "Rooms", "title": "Rest, considered", "alt": "An elegant hotel bedroom in warm neutral tones"},
+      {"category": "Dining", "title": "At the table", "alt": "Fine dining table detail in evening light"},
+      {"category": "Rooms", "title": "Light-filled mornings", "alt": "A peaceful hotel room with a window and natural daylight"},
+      {"category": "Destination", "title": "The landscape beyond", "alt": "A warm sun setting over an open natural landscape"},
+      {"category": "Experiences", "title": "Time to linger", "alt": "A quiet outdoor table set for a relaxed moment"}
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Our guests",
+    "title": "Memories\nthat stay.",
+    "note": "Design placeholder\nReplace with verified review",
+    "previous": "Show previous testimonial",
+    "next": "Show next testimonial",
+    "items": [
+      {"quote": "A beautiful stay, thoughtful service, and an atmosphere that made it difficult to leave.", "guest": "Guest name placeholder", "location": "Location placeholder"},
+      {"quote": "The kind of place that turns an overnight stay into part of the journey itself.", "guest": "Guest name placeholder", "location": "Location placeholder"},
+      {"quote": "Calm, considered, and wonderfully welcoming from the very first moment.", "guest": "Guest name placeholder", "location": "Location placeholder"}
+    ]
+  },
+  "booking": {
+    "eyebrow": "Plan your stay",
+    "title": "Book your stay",
+    "intro": "A considered stay begins with a few quiet details. We will prepare your request with care.",
+    "steps": {"dates": "Dates", "guests": "Guests", "room": "Room", "details": "Your details"},
+    "questions": {"arrival": "When would you like to arrive?", "traveling": "Who is traveling?", "room": "Choose your room", "details": "Your details"},
+    "progress": "Step {current} of {total}",
+    "back": "Back",
+    "continue": "Continue",
+    "selected": "Selected",
+    "decrease": "Decrease",
+    "increase": "Increase",
+    "stay": "Your stay",
+    "details": "Your details",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Guests",
+    "rooms": "Rooms",
+    "roomType": "Room type",
+    "selectRoom": "Select a room",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "requests": "Special requests",
+    "optional": "(Optional)",
+    "placeholder": "Tell us anything that would help make your stay more comfortable.",
+    "submit": "Request a stay",
+    "notice": "Submitting this form prepares a stay request only; it does not confirm availability or reserve a room.",
+    "received": "Request received",
+    "thanks": "Thank you,",
+    "success": "Your stay request has been prepared. Our booking team will be able to confirm availability once the booking system is connected.",
+    "edit": "Edit request",
+    "start": "Start another request",
+    "guest": "Guest",
+    "guestsPlural": "Guests",
+    "room": "Room",
+    "roomsPlural": "Rooms",
+    "guestCount": "{count, plural, one {# Guest} other {# Guests}}",
+    "guestsAtLeast": "10+ Guests",
+    "roomCount": "{count, plural, one {# Room} other {# Rooms}}",
+    "roomsAtLeast": "5+ Rooms",
+    "errors": {
+      "firstName": "Enter your first name.",
+      "lastName": "Enter your last name.",
+      "email": "Enter a valid email address.",
+      "phone": "Enter a valid phone number.",
+      "checkIn": "Select a check-in date.",
+      "checkOut": "Select a check-out date.",
+      "dateOrder": "Check-out must be after check-in.",
+      "guests": "Select at least one guest.",
+      "rooms": "Select at least one room.",
+      "roomType": "Select a room type."
+    }
+  },
+  "final": {
+    "eyebrow": "Your escape awaits",
+    "title": "Stay at\nParadis.",
+    "description": "Make your next journey one worth remembering.",
+    "book": "Book your stay",
+    "explore": "Explore Paradis",
+    "alt": "A serene luxury hotel exterior at dusk"
+  },
+  "contact": {
+    "hotel": "Paradis Hotel",
+    "location": "Wereta · Ethiopia",
+    "plan": "Start planning your stay",
+    "phone": "Phone",
+    "email": "Email",
+    "locationLabel": "Location",
+    "address": "Address",
+    "placeholder": "Placeholder"
+  },
+  "footer": {
+    "location": "Wereta · Ethiopia",
+    "explore": "Explore",
+    "contact": "Contact",
+    "follow": "Follow",
+    "book": "Book your stay",
+    "privacy": "Privacy — placeholder",
+    "terms": "Terms — placeholder",
+    "copyright": "© 2026 Paradis Hotel",
+    "coming": "{name} link coming soon",
+    "social": ["Instagram", "Facebook", "Tripadvisor"]
+  }
+}
