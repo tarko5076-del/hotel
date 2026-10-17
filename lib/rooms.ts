@@ -6,7 +6,7 @@ export type Room = {
   detailsClassName: string;
 };
 
-// Replace these temporary image URLs and category copy when Paradis Hotel photography is available.
+// Replace these temporary image URLs and category copy when Ardent Hotel photography is available.
 export const rooms: Room[] = [
   {
     id: "deluxe",

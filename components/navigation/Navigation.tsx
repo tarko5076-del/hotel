@@ -65,8 +65,8 @@ export function Navigation() {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${scrolled ? "border-b border-black/10 bg-ivory/95 text-ink shadow-[0_4px_22px_rgba(30,30,26,0.03)] backdrop-blur-md" : "text-white"}`}>
       <nav className="mx-auto flex h-[78px] max-w-[1600px] items-center justify-between px-5 sm:px-8 lg:h-[94px] lg:px-12" aria-label="Primary navigation">
-        <Link href="/" className="focus-ring relative z-[60] font-sans text-[14px] font-semibold tracking-[0.24em]" aria-label="Paradis Hotel home">
-          PARADIS
+        <Link href="/" className="focus-ring relative z-[60] font-sans text-[14px] font-semibold tracking-[0.24em]" aria-label="Ardent Hotel home">
+          ARDENT HOTEL
         </Link>
 
         <div className="hidden items-center gap-9 lg:flex" aria-label="Hotel sections">

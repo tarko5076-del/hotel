@@ -20,8 +20,8 @@ export function generateStaticParams() {
 export async function generateMetadata({params}: Omit<Props, "children">): Promise<Metadata> {
   const {locale} = await params;
   const amharic = locale === "am";
-  const title = amharic ? "ፓራዲስ ሆቴል | በወረታ የቅንጦት ቆይታ" : "Paradis Hotel | Luxury Stay in Wereta, Ethiopia";
-  const description = amharic ? "በወረታ፣ ኢትዮጵያ ውስጥ ለማይረሳ ጉዞ፣ ለረጋ ጊዜያት እና ለልዩ መስተንግዶ የተዘጋጀ ውብ ቆይታ።" : "Discover Paradis Hotel in Wereta, Ethiopia — a refined 4-star stay designed for unforgettable journeys, peaceful moments, and exceptional hospitality.";
+  const title = amharic ? "አርደንት ሆቴል | በወረታ የቅንጦት ቆይታ" : "Ardent Hotel | Luxury Stay in Wereta, Ethiopia";
+  const description = amharic ? "በወረታ፣ ኢትዮጵያ ውስጥ ለማይረሳ ጉዞ፣ ለረጋ ጊዜያት እና ለልዩ መስተንግዶ የተዘጋጀ ውብ ቆይታ።" : "Discover Ardent Hotel in Wereta, Ethiopia — a refined 4-star stay designed for unforgettable journeys, peaceful moments, and exceptional hospitality.";
   return {
     title,
     description,
@@ -29,7 +29,7 @@ export async function generateMetadata({params}: Omit<Props, "children">): Promi
       canonical: `/${locale}`,
       languages: {en: "/en", am: "/am"}
     },
-    openGraph: {type: "website", locale: locale === "am" ? "am_ET" : "en_US", url: `/${locale}`, siteName: amharic ? "ፓራዲስ ሆቴል" : "Paradis Hotel", title, description}
+    openGraph: {type: "website", locale: locale === "am" ? "am_ET" : "en_US", url: `/${locale}`, siteName: amharic ? "አርደንት ሆቴል" : "Ardent Hotel", title, description}
   };
 }
 

@@ -3,7 +3,7 @@ export type Experience = {
   image: string;
 };
 
-// Temporary editorial imagery and copy; replace when Paradis Hotel experience details are confirmed.
+// Temporary editorial imagery and copy; replace when Ardent Hotel experience details are confirmed.
 export const experiences: Experience[] = [
   {
     number: "01",

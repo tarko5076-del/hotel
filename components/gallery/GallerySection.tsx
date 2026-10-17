@@ -55,11 +55,11 @@ export function GallerySection() {
         <div className="mt-16 grid gap-4 md:mt-24 md:grid-cols-12 md:auto-rows-[110px] md:gap-5">
           {galleryImages.map((image, index) => (
             <Fragment key={image.src}>
-            <motion.button {...enter(0.08 + index * 0.06)} type="button" onClick={(event) => { triggerRef.current = event.currentTarget; setActiveIndex(index); }} className={`${image.className} focus-ring group relative min-h-[clamp(240px,75vw,340px)] overflow-hidden bg-[#bcb5aa] text-left md:min-h-0`} aria-label={t("open", {title: t(`items.${index}.title`), category: t(`items.${index}.category`)})}>
+            <button type="button" onClick={(event) => { triggerRef.current = event.currentTarget; setActiveIndex(index); }} className={`${image.className} focus-ring group relative min-h-[clamp(240px,75vw,340px)] overflow-hidden bg-[#bcb5aa] text-left md:min-h-0`} aria-label={t("open", {title: t(`items.${index}.title`), category: t(`items.${index}.category`)})}>
               <RevealImage src={image.src} alt={t(`items.${index}.alt`)} sizes="(max-width: 767px) 90vw, (max-width: 1023px) 50vw, 58vw" className="absolute inset-0" animation="scale" delay={index * 0.08} />
               <div className="absolute inset-0 bg-black/[0.04] transition-colors duration-500 group-hover:bg-black/[0.3]" />
               <div className="absolute inset-x-0 bottom-0 flex translate-y-0 items-end justify-between gap-4 p-5 text-white opacity-100 transition-all duration-500 md:translate-y-3 md:opacity-0 group-hover:translate-y-0 group-hover:opacity-100 focus-within:translate-y-0 focus-within:opacity-100 sm:p-6"><div className="min-w-0"><p className="text-[9px] font-bold tracking-[0.2em]">{t(`items.${index}.category`)}</p><p className="mt-2 break-words font-display text-2xl leading-none">{t(`items.${index}.title`)}</p></div><span className="shrink-0 text-[10px] font-bold tracking-[0.16em]">{t("view")}</span></div>
-            </motion.button>
+            </button>
             </Fragment>
           ))}
         </div>

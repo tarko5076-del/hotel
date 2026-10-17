@@ -3,7 +3,7 @@ export type GalleryImage = {
   className: string;
 };
 
-// Temporary editorial imagery; replace these URLs with Paradis Hotel photography when available.
+// Temporary editorial imagery; replace these URLs with Ardent Hotel photography when available.
 export const galleryImages: GalleryImage[] = [
   {
     src: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=84",

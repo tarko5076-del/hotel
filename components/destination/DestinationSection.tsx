@@ -26,7 +26,7 @@ export function DestinationSection() {
           <div className="lg:col-span-4 lg:col-start-9 lg:self-center">
             <motion.p {...enter(0.08)} className="flex items-center gap-3 text-[10px] font-bold tracking-[0.22em] text-moss"><span className="h-px w-8 bg-gold" /> THE DESTINATION</motion.p>
             <motion.h2 id="destination-title" {...enter(0.18)} className="mt-7 font-display text-[clamp(3.45rem,5.8vw,6.2rem)] font-medium leading-[0.8] tracking-[-0.05em]">DISCOVER<br />WERETA.</motion.h2>
-            <motion.p {...enter(0.3)} className="mt-8 max-w-sm text-[15px] leading-7 text-ink/72 sm:text-base sm:leading-8">A stay at Paradis is an invitation to slow down, explore, and experience the character of northern Ethiopia.</motion.p>
+            <motion.p {...enter(0.3)} className="mt-8 max-w-sm text-[15px] leading-7 text-ink/72 sm:text-base sm:leading-8">A stay at Ardent Hotel is an invitation to slow down, explore, and experience the character of northern Ethiopia.</motion.p>
           </div>
         </div>
         <div className="mt-16 grid border-t border-ink/15 sm:mt-20 md:grid-cols-3">

@@ -12,18 +12,18 @@
   },
   "hero": {
     "location": "Wereta · Ethiopia",
-    "title": "Experience\nParadise",
+    "title": "Experience\nArdent Hotel",
     "description": "A refined stay where modern hospitality, peaceful surroundings, and unforgettable Ethiopian experiences come together.",
     "book": "Book your stay",
-    "explore": "Explore Paradis",
+    "explore": "Explore Ardent Hotel",
     "scroll": "Scroll",
     "alt": "Elegant poolside view at a luxury hotel"
   },
   "intro": {
-    "eyebrow": "Welcome to Paradis",
+    "eyebrow": "Welcome to Ardent Hotel",
     "title": "A place to\nslow down.",
     "description": "Discover a refined stay in Wereta, Ethiopia, where contemporary comfort meets warm hospitality and the beauty of the surrounding destination.",
-    "cta": "Discover Paradis",
+    "cta": "Discover Ardent Hotel",
     "alt": "Sunlit lounge at a contemporary hotel"
   },
   "rooms": {
@@ -54,7 +54,7 @@
     ]
   },
   "experience": {
-    "eyebrow": "The Paradis experience",
+    "eyebrow": "The Ardent Hotel experience",
     "title": "More than\na stay.",
     "description": "Slow mornings, memorable evenings, thoughtful service, and moments designed to make every stay feel extraordinary.",
     "explore": "Explore",
@@ -86,7 +86,7 @@
     ]
   },
   "dining": {
-    "eyebrow": "Taste Paradis",
+    "eyebrow": "Taste Ardent Hotel",
     "title": "Dining with\ncharacter.",
     "description": "Thoughtful flavors, warm hospitality, and memorable moments around the table.",
     "featureAlt": "A warmly lit restaurant interior with elegant table settings",
@@ -112,14 +112,14 @@
   "romance": {
     "eyebrow": "For two",
     "title": "Make the\nmoment last.",
-    "description": "From quiet mornings to unforgettable evenings, Paradis creates space for moments worth remembering.",
-    "cta": "Explore Paradis",
+    "description": "From quiet mornings to unforgettable evenings, Ardent Hotel creates space for moments worth remembering.",
+    "cta": "Explore Ardent Hotel",
     "alt": "A quiet coastal scene in warm evening light"
   },
   "destination": {
     "eyebrow": "The destination",
     "title": "Discover\nWereta.",
-    "description": "A stay at Paradis is an invitation to slow down, explore, and experience the character of northern Ethiopia.",
+    "description": "A stay at Ardent Hotel is an invitation to slow down, explore, and experience the character of northern Ethiopia.",
     "alt": "An expansive Ethiopian landscape with green hills",
     "items": [
       {
@@ -137,9 +137,9 @@
     ]
   },
   "gallery": {
-    "eyebrow": "A glimpse of Paradis",
+    "eyebrow": "A glimpse of Ardent Hotel",
     "title": "See the stay.",
-    "description": "Explore the spaces, details, and moments that define the Paradis experience.",
+    "description": "Explore the spaces, details, and moments that define the Ardent Hotel experience.",
     "view": "View",
     "open": "Open {title}, {category}",
     "close": "Close gallery",
@@ -224,14 +224,14 @@
   },
   "final": {
     "eyebrow": "Your escape awaits",
-    "title": "Stay at\nParadis.",
+    "title": "Stay at\nArdent Hotel.",
     "description": "Make your next journey one worth remembering.",
     "book": "Book your stay",
-    "explore": "Explore Paradis",
+    "explore": "Explore Ardent Hotel",
     "alt": "A serene luxury hotel exterior at dusk"
   },
   "contact": {
-    "hotel": "Paradis Hotel",
+    "hotel": "Ardent Hotel",
     "location": "Wereta · Ethiopia",
     "plan": "Start planning your stay",
     "phone": "Phone",
@@ -248,7 +248,7 @@
     "book": "Book your stay",
     "privacy": "Privacy — placeholder",
     "terms": "Terms — placeholder",
-    "copyright": "© 2026 Paradis Hotel",
+    "copyright": "© 2026 Ardent Hotel",
     "coming": "{name} link coming soon",
     "social": ["Instagram", "Facebook", "Tripadvisor"]
   }

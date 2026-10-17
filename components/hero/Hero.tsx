@@ -67,7 +67,7 @@ export function Hero() {
         <span className="text-[9px] font-semibold tracking-[0.2em]">{t("scroll")}</span>
         <motion.span animate={reduceMotion ? {} : { y: [0, 6, 0] }} transition={{ repeat: Infinity, duration: 2.2, ease: "easeInOut" }} className="flex h-7 w-7 items-center justify-center border border-white/50 rounded-full"><ArrowDown size={13} strokeWidth={1.4} /></motion.span>
       </motion.div>
-      <p className="absolute bottom-7 left-5 hidden text-[9px] font-medium tracking-[0.18em] text-white/70 sm:block sm:bottom-10 sm:left-8 lg:left-12">PARADIS HOTEL · 4 STAR</p>
+      <p className="absolute bottom-7 left-5 hidden text-[9px] font-medium tracking-[0.18em] text-white/70 sm:block sm:bottom-10 sm:left-8 lg:left-12">ARDENT HOTEL · 4 STAR</p>
     </section>
   );
 }
